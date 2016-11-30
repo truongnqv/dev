@@ -117,27 +117,28 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\CustomerConfiguration.cs" />
-    <Compile Include="Entities\EntityBaseConfiguration.cs" />
+    <Compile Include="Data\Configurations\CustomerConfiguration.cs" />
+    <Compile Include="Data\Configurations\EntityBaseConfiguration.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Error.cs" />
     <Compile Include="Entities\Genre.cs" />
-    <Compile Include="Entities\GenreConfiguration.cs" />
+    <Compile Include="Data\Configurations\GenreConfiguration.cs" />
     <Compile Include="Entities\IEntityBase.cs" />
     <Compile Include="Entities\Movie.cs" />
-    <Compile Include="Entities\MovieConfiguration.cs" />
+    <Compile Include="Data\Configurations\MovieConfiguration.cs" />
     <Compile Include="Entities\Rental.cs" />
-    <Compile Include="Entities\RentalConfiguration.cs" />
+    <Compile Include="Data\Configurations\RentalConfiguration.cs" />
     <Compile Include="Entities\Role.cs" />
-    <Compile Include="Entities\RoleConfiguration.cs" />
+    <Compile Include="Data\Configurations\RoleConfiguration.cs" />
     <Compile Include="Entities\Stock.cs" />
-    <Compile Include="Entities\StockConfiguration.cs" />
+    <Compile Include="Data\Configurations\StockConfiguration.cs" />
     <Compile Include="Entities\User.cs" />
-    <Compile Include="Entities\UserConfiguration.cs" />
+    <Compile Include="Data\Configurations\UserConfiguration.cs" />
     <Compile Include="Entities\UserRole.cs" />
-    <Compile Include="Entities\UserRoleConfiguration.cs" />
+    <Compile Include="Data\Configurations\UserRoleConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
