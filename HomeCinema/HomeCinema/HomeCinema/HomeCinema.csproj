@@ -136,6 +136,7 @@
     <Compile Include="Data\Configurations\UserConfiguration.cs" />
     <Compile Include="Entities\UserRole.cs" />
     <Compile Include="Data\Configurations\UserRoleConfiguration.cs" />
+    <Compile Include="HomeCinemaContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
