@@ -1,0 +1,9 @@
+D:\Study\C#\GitHub\PhatTien\CustomersDataAccess\bin\Debug\CustomersDataAccess.dll.config
+D:\Study\C#\GitHub\PhatTien\CustomersDataAccess\bin\Debug\CustomersDataAccess.dll
+D:\Study\C#\GitHub\PhatTien\CustomersDataAccess\bin\Debug\CustomersDataAccess.pdb
+D:\Study\C#\GitHub\PhatTien\CustomersDataAccess\bin\Debug\EntityFramework.dll
+D:\Study\C#\GitHub\PhatTien\CustomersDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\C#\GitHub\PhatTien\CustomersDataAccess\bin\Debug\EntityFramework.xml
+D:\Study\C#\GitHub\PhatTien\CustomersDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\C#\GitHub\PhatTien\CustomersDataAccess\obj\Debug\CustomersDataAccess.dll
+D:\Study\C#\GitHub\PhatTien\CustomersDataAccess\obj\Debug\CustomersDataAccess.pdb
