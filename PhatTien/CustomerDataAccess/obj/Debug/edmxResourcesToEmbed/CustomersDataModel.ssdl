@@ -6,7 +6,7 @@
     </Key>
     <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
     <Property Name="Name" Type="nchar" MaxLength="50" Nullable="false" />
-    <Property Name="Phone" Type="int" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
     <Property Name="Vehicle" Type="varchar" MaxLength="20" />
     <Property Name="VehiclePlate" Type="varchar" MaxLength="20" />
   </EntityType>

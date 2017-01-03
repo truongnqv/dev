@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using CustomerDataAccess;
+using CustomerRepository;
 
 namespace CustomerService.Controllers
 {
@@ -12,7 +12,7 @@ namespace CustomerService.Controllers
     {
         public IEnumerable<Customer> Get()
         {
-            using (CustomersEntities entities = new CustomersEntities())
+            using (CustomerEntities entities = new CustomerEntities())
             {
                 return entities.Customers.ToList();
             }
@@ -20,21 +20,41 @@ namespace CustomerService.Controllers
 
         public Customer Get(Guid id)
         {
-            using (CustomersEntities entities = new CustomersEntities())
+            using (CustomerEntities entities = new CustomerEntities())
             {
                 return entities.Customers.FirstOrDefault(e => e.Id == id);
             }
         }
 
-        public void Post([FromBody]Customer customer)
+        public HttpResponseMessage Post([FromBody] IEnumerable<Customer> customers)
         {
-            using (CustomersEntities entities = new CustomersEntities())
+            try
             {
-                entities.Customers.Add(Cu);
-                entities.SaveChanges();
+                using (CustomerEntities entities = new CustomerEntities())
+                {
+                    foreach (Customer cus in customers)
+                    {
+                        cus.Id = Guid.NewGuid();
+                    }
+                   
+                    entities.Customers.AddRange(customers);
+                    entities.SaveChanges();
+
+                    var message = Request.CreateResponse(HttpStatusCode.Created, customers);
+                    foreach (Customer cus in customers)
+                    {
+                        message.Headers.Location = new Uri(Request.RequestUri +
+                        cus.Id.ToString());
+                    }
+
+                    return message;
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
             }
         }
 
-        
     }
 }

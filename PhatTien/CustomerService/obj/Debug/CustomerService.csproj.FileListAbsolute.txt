@@ -15,7 +15,7 @@ D:\Study\C#\GitHub\PhatTien\CustomerService\bin\CustomerService.dll.config
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\CustomerService.dll
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\CustomerService.pdb
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\Antlr3.Runtime.dll
-D:\Study\C#\GitHub\PhatTien\CustomerService\bin\CustomerDataAccess.dll
+D:\Study\C#\GitHub\PhatTien\CustomerService\bin\CustomerRepository.dll
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\EntityFramework.dll
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\EntityFramework.SqlServer.dll
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\Microsoft.AI.Agent.Intercept.dll
@@ -53,7 +53,7 @@ D:\Study\C#\GitHub\PhatTien\CustomerService\bin\System.Web.WebPages.Deployment.d
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\System.Web.WebPages.dll
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\System.Web.WebPages.Razor.dll
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\WebGrease.dll
-D:\Study\C#\GitHub\PhatTien\CustomerService\bin\CustomerDataAccess.pdb
+D:\Study\C#\GitHub\PhatTien\CustomerService\bin\CustomerRepository.pdb
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\Microsoft.AI.DependencyCollector.xml
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\Study\C#\GitHub\PhatTien\CustomerService\bin\Microsoft.AI.Web.xml

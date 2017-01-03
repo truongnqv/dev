@@ -4,9 +4,9 @@
     <EntitySetMapping Name="Customers">
       <EntityTypeMapping TypeName="CustomerModel.Customer">
         <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="Vehicle" ColumnName="Vehicle" />
           <ScalarProperty Name="VehiclePlate" ColumnName="VehiclePlate" />
         </MappingFragment>

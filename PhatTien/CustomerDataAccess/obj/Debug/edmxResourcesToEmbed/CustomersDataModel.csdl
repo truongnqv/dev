@@ -3,10 +3,11 @@
   <EntityType Name="Customer">
     <Key>
       <PropertyRef Name="Id" />
+      <PropertyRef Name="Phone" />
     </Key>
     <Property Name="Id" Type="Guid" Nullable="false" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
-    <Property Name="Phone" Type="Int32" />
+    <Property Name="Phone" Type="String" Nullable="false" />
     <Property Name="Vehicle" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="VehiclePlate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>

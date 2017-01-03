@@ -14,14 +14,9 @@ namespace CustomerDataAccess
     
     public partial class Customer
     {
-        public virtual List<Customer> CustomerItems { get; set; }
-        public Customer()
-        {
-            this.CustomerItems = new List<Customer>();
-        }
         public System.Guid Id { get; set; }
         public string Name { get; set; }
-        public Nullable<int> Phone { get; set; }
+        public string Phone { get; set; }
         public string Vehicle { get; set; }
         public string VehiclePlate { get; set; }
     }

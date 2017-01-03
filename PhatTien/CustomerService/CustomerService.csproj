@@ -318,9 +318,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CustomerDataAccess\CustomerDataAccess.csproj">
-      <Project>{8d544b4b-1b51-4357-b560-f24bceaf0e2f}</Project>
-      <Name>CustomerDataAccess</Name>
+    <ProjectReference Include="..\CustomerRepository\CustomerRepository.csproj">
+      <Project>{7ebbc124-0953-4045-a93b-5684e3af0726}</Project>
+      <Name>CustomerRepository</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
