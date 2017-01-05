@@ -6,6 +6,28 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var ulCustomers = $('#ulCustomers');
+            $('#btn').click(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: "api/customers/",
+                    dataType: 'json',
+                    success: function (data) {
+                        ulCustomers.empty();
+                        $.each(data, function (index, val) {
+                            ulCustomers.append('<tr><td>' + val.Name + '</td>' + '<td>' + val.Phone + '</td>' + '<td>' + val.Vehicle + '</td>' + '<td>' + val.VehiclePlate + '</td></tr>');
+                        });
+                    }
+                });
+            });
+            $('#btnClear').click(function () {
+                ulCustomers.empty();
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
